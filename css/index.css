@@ -350,3 +350,12 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .content-pick form {
+  max-width: 25%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.home .content-pick form input {
+  margin: 20px 0;
+}
