@@ -46,8 +46,22 @@ signBtn.addEventListener('dblclick', function(event) {
 // Using the 10 unique events, find ways to update the DOM in creative ways. 
 //For example you could change colors, animate objects, remove objects, etc.
 
-// * [ ] Nest two similar events somewhere in the site and prevent the event propagation 
+// * [x] Nest two similar events somewhere in the site and prevent the event propagation 
 //properly
+
+const containerBtn = document.querySelector('.main-navigation')
+containerBtn.addEventListener('click', function(event) {
+  
+  //  target you are clicking on
+console.log(`this is my target: ${event.target}`) 
+  
+  // target that you added the event listener to.
+console.log(`this is my current target: ${event.currentTarget}`)
+  
+  event.stopPropagation();
+})
+
+
 // * [ ] Stop the navigation from items from refreshing the page by using `preventDefault()`
 
 
